@@ -1,3 +1,6 @@
 .idea/
+derby.log
+metastore_db/
+run.sh
 project/
 target/
