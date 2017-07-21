@@ -49,6 +49,7 @@ object PipelineExample {
       (8L, "apache spark")
     )).toDF("id", "text")
 
+
     // Make predictions on test documents.
     model.transform(test)
       .select("id", "text", "probability", "prediction")
