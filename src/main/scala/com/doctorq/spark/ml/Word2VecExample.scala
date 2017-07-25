@@ -26,11 +26,10 @@ object Word2VecExample {
       .setVectorSize(6)
       .setMinCount(0)
     val model = word2Vec.fit(documentDF)
-
     val result = model.transform(documentDF)
+    result.show()
     result.collect().foreach { case Row(text: Seq[_], features: Vector) =>
       println(s"Text: [${text.mkString(", ")}] => \nVector: $features\n") }
-
   }
 
 }
