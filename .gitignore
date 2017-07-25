@@ -4,3 +4,4 @@ metastore_db/
 run.sh
 project/
 target/
+data/
