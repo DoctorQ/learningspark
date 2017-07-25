@@ -16,7 +16,6 @@ object StopWordsRemoverExample extends SparkObject{
       (0, Seq("I", "saw", "the", "red", "balloon")),
       (1, Seq("Mary", "had", "a", "little", "lamb"))
     )).toDF("id", "raw")
-
     remover.transform(dataSet).show(false)
 
   }
