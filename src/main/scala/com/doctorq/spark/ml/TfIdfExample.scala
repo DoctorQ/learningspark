@@ -25,11 +25,7 @@ object TfIdfExample {
     val featurizedData = hashingTF.transform(wordsData)
     featurizedData.show()
     // alternatively, CountVectorizer can also be used to get term frequency vectors
-    val test = spark.createDataFrame(Seq(
-      (0.0, "numerical measure of how much information a term provides"),
-      (0.0, "information about a particular document. Inverse document "),
-      (1.0, "applied to avoid dividing by zero for terms outside the corpus")
-    )).toDF("label", "sentence")
+
     val idf = new IDF().setInputCol("rawFeatures").setOutputCol("features")
     val idfModel = idf.fit(featurizedData)
 
