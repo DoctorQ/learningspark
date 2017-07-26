@@ -1,5 +1,6 @@
-package com.doctorq.spark.ml
+package com.doctorq.spark.ml.textfeature
 
+import com.doctorq.spark.ml.SparkObject
 import org.apache.spark.ml.feature.PolynomialExpansion
 import org.apache.spark.ml.linalg.Vectors
 

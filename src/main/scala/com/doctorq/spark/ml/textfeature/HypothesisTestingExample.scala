@@ -1,4 +1,4 @@
-package com.doctorq.spark.ml
+package com.doctorq.spark.ml.textfeature
 
 import org.apache.spark.ml.linalg.{Vector, Vectors}
 import org.apache.spark.ml.stat.ChiSquareTest

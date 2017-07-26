@@ -1,4 +1,4 @@
-package com.doctorq.spark.ml
+package com.doctorq.spark.ml.textfeature.extractor
 
 import org.apache.spark.ml.feature.{HashingTF, IDF, Tokenizer}
 import org.apache.spark.sql.SparkSession

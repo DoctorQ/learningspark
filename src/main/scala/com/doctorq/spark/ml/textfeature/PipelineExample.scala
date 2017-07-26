@@ -1,9 +1,9 @@
-package com.doctorq.spark.ml
+package com.doctorq.spark.ml.textfeature
 
-import org.apache.spark.ml.{Pipeline, PipelineModel}
-import org.apache.spark.ml.linalg.Vector
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.ml.feature.{HashingTF, Tokenizer}
+import org.apache.spark.ml.linalg.Vector
+import org.apache.spark.ml.{Pipeline, PipelineModel}
 import org.apache.spark.sql.{Row, SparkSession}
 
 object PipelineExample {

@@ -1,9 +1,10 @@
-package com.doctorq.spark.ml
+package com.doctorq.spark.ml.textfeature
+
+import com.doctorq.spark.ml.SparkObject
 
 object InteractionExample extends SparkObject {
   def main(args: Array[String]): Unit = {
-    import org.apache.spark.ml.feature.Interaction
-    import org.apache.spark.ml.feature.VectorAssembler
+    import org.apache.spark.ml.feature.{Interaction, VectorAssembler}
     val df = spark.createDataFrame(Seq(
       (1, 1, 2, 3, 8, 4, 5),
       (2, 4, 3, 8, 7, 9, 8),

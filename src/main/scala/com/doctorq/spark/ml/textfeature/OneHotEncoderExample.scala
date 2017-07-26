@@ -1,4 +1,6 @@
-package com.doctorq.spark.ml
+package com.doctorq.spark.ml.textfeature
+
+import com.doctorq.spark.ml.SparkObject
 
 object OneHotEncoderExample extends SparkObject {
 
